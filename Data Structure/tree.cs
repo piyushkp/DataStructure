@@ -499,7 +499,7 @@ namespace Tree
             root.data = preOrder[0];
             Stack<Node> _stack = new Stack<Node>();
             Node temp;
-            for (int i = 0; i < preOrder.Length; i++)
+            for (int i = 1; i < preOrder.Length; i++)
             {
                 temp = null;
                 while (_stack.Count > 0 && preOrder[i] > _stack.Peek().data)
